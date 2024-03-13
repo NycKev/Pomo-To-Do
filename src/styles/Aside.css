@@ -1,0 +1,43 @@
+/* Aside.css */
+.aside {
+  width: 200px;
+  min-width: 200px;
+  height: calc(100vh - 60px); /* Resta el espacio del footer */
+  overflow-y: auto; /* Agrega un scroll si es necesario */
+  background-color: rgba(240, 240, 240, 0.8);
+  padding: 20px;
+  box-sizing: border-box;
+}
+.aside-title {
+  margin-top: 0;
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.buttons {
+  margin-top: 20px; /* Espaciado entre el contenido y los botones */
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(240, 240, 240, 0.8);
+  color: #161212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Margen inferior fijo entre los botones */
+}
+
+.button-icon {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  width: 20px; /* Ajusta el tamaño del icono según tus necesidades */
+  height: 20px; /* Ajusta el tamaño del icono según tus necesidades */
+}
+
+button:hover {
+  background-color: #676869a0;
+}
