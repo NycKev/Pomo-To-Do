@@ -20,6 +20,7 @@ function App() {
       <div style={{ display: 'flex' }}>
         <Aside handleButtonClick={handleButtonClick} />
         <Content selectedButton={selectedButton} />
+        
       </div>
       {/* Renderiza el componente Footer al final de la página */}
       <Footer />

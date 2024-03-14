@@ -1,17 +1,14 @@
 /* Aside.css */
 .aside {
-  width: 200px;
-  min-width: 200px;
-  height: calc(100vh - 60px); /* Resta el espacio del footer */
+  width: 350px; /* Ancho predeterminado */
+  min-width: 200px; /* Ancho mínimo */
+  height: calc(100vh - 60px); /* Altura predeterminada, restando el espacio del footer */
   overflow-y: auto; /* Agrega un scroll si es necesario */
   background-color: rgba(240, 240, 240, 0.8);
-  padding: 20px;
+  padding: 30px;
   box-sizing: border-box;
 }
-.aside-title {
-  margin-top: 0;
-  text-align: left; /* Alinear el texto a la izquierda */
-}
+
 
 .buttons {
   margin-top: 20px; /* Espaciado entre el contenido y los botones */
