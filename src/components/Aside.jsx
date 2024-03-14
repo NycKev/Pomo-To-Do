@@ -4,9 +4,6 @@ import React from 'react';
 import '/src/styles/Aside.css';
 import HoyButton from './HoyButton';
 import MañanaButton from './MañanaButton'; // Importa el componente MañanaButton
-import CompletadoButton from './CompletadoButton'; // Importa el componente CompletadoButton
-import TareaButton from './TareaButton'; // Importa el componente TareaButton
-import TodosButton from './TodosButton'; // Importa el componente TodosButton
 
 // eslint-disable-next-line react/prop-types
 function Aside({ handleButtonClick }) {
