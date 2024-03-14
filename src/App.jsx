@@ -1,31 +1,24 @@
-// App.jsx
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
-import NavBar from '/src/components/NavBar';
-import Aside from '/src/components/Aside';
-import Content from '/src/components/Content';
-import Footer from '/src/components/Footer'; // Importa el componente Footer
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import HomeScreen from "./screens/HomeScreen";
 
 function App() {
-  const [selectedButton, setSelectedButton] = useState(""); // Estado para almacenar el botón seleccionado
 
-  // Función para manejar el clic en un botón y actualizar el estado
-  const handleButtonClick = (buttonName) => {
-    setSelectedButton(buttonName);
-  };
 
   return (
-    <div>
-      <NavBar />
-      <div style={{ display: 'flex' }}>
-        <Aside handleButtonClick={handleButtonClick} />
-        <Content selectedButton={selectedButton} />
-        
-      </div>
-      {/* Renderiza el componente Footer al final de la página */}
-      <Footer />
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<HomeScreen/>} />
+      </Routes>
     </div>
   );
 }
 
-export default App;
+function Root() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
+export default Root;
